@@ -1,0 +1,20 @@
+from cal_func import do_addition,do_subtraction
+def main():
+    print("welcome to calculator app")
+    print("""Please select 1 number you want to do
+          1=do_addition
+          2=do_subtraction""")
+    
+    user_input=input("Select a Number")
+
+    a=int(input('Enter first number'))
+    b=int(input("Enter second number"))
+
+    if user_input =="1":
+        result=do_addition(a,b)
+    elif user_input=="2":
+        result=do_subtraction(a,b)
+    print("result",result)
+
+if __name__=="__main__":
+    main()
