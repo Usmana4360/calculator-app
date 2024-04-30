@@ -1,4 +1,4 @@
-from cal_func import do_addition,do_subtraction
+from cal_func import do_addition,do_subtraction,do_diviion
 from multipy import do_multipication
 def main():
     print("welcome to calculator app")
@@ -17,6 +17,8 @@ def main():
         result=do_subtraction(a,b)
     elif user_input=="3":
         result=do_multipication(a,b)
+    elif user_input=="4":
+        result=do_diviion(a,b)
     print("result",result)
     
 
