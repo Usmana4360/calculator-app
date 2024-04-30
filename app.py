@@ -1,4 +1,5 @@
 from cal_func import do_addition,do_subtraction
+from area import calculate_area_rectangle
 from multipy import do_multipication
 def main():
     print("welcome to calculator app")
@@ -17,6 +18,8 @@ def main():
         result=do_subtraction(a,b)
     elif user_input=="3":
         result=do_multipication(a,b)
+    elif user_input=="4":
+        result=calculate_area_rectangle(a*b)
     print("result",result)
     
 
